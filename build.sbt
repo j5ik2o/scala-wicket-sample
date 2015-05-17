@@ -32,7 +32,7 @@ lazy val application = project
   .settings(com.earldouglas.xwp.XwpPlugin.tomcat(): _*)
   .settings(flywaySettings: _*)
   .settings(
-    name := "wicket-application",
+    name := "scala-wicket-application",
     resourceDirectory in Compile <<= baseDirectory(_ / "src/main/resources"),
     libraryDependencies ++= Seq(
       "org.apache.wicket" % "wicket-core" % wicketVersion withSources(),
@@ -52,7 +52,7 @@ lazy val application = project
 lazy val domain = project
   .settings(commonSettings: _*)
   .settings(
-    name := "wicket-domain",
+    name := "scala-wicket-domain",
     libraryDependencies ++= Seq(
       "org.sisioh" %% "scala-dddbase" % "0.2.7"
     )
@@ -61,5 +61,5 @@ lazy val domain = project
 lazy val infrastructure = project
   .settings(commonSettings: _*)
   .settings(
-    name := "wicket-infrastructure"
+    name := "scala-wicket-infrastructure"
   )
