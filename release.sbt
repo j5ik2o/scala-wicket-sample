@@ -9,5 +9,6 @@ releaseProcess := Seq[ReleaseStep](
   commitReleaseVersion,                   // : ReleaseStep, performs the initial git checks
   tagRelease,                             // : ReleaseStep
   setNextVersion,                         // : ReleaseStep
-  commitNextVersion                       // : ReleaseStep
+  commitNextVersion,                      // : ReleaseStep
+  pushChanges
 )
