@@ -78,3 +78,9 @@ log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more in
 ```sh
 $ sbt container:stop
 ```
+
+### Packaging war
+
+```sh
+$ sbt package
+```
