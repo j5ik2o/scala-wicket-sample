@@ -7,7 +7,7 @@
 
 ## Usage
 
-### Start the container with command line parameters
+### Start the container by command line parameters
 
 ```sh
 $ sbt ~container:start
