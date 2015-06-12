@@ -31,7 +31,7 @@ class CalcPage extends BasePage {
   private val feedbackPanel = new FeedbackPanel("feedback")
   private val value1Field = new RequiredTextField("value1", PropertyModel.of[Integer](this, "v1"))
   private val value2Field = new RequiredTextField("value2", PropertyModel.of[Integer](this, "v2"))
-  private val resultLabel = new Label("result", new PropertyModel(this, "result"))
+  private val resultLabel = new Label("result", PropertyModel.of(this, "result"))
 
   add(form1)
   form1.add(feedbackPanel)
